@@ -3,6 +3,7 @@ from downloader import Downloader
 from mparser import MParser
 import os
 import git
+from multiprocessing import Pool
 class Manager(object):
     def __init__(self,start_url = None):
         self.parser = MParser()
@@ -15,8 +16,10 @@ class Manager(object):
         git.Git(path).clone(url+".git")
 
     @classmethod
-    def download(cls, url,path):
-        cls.gitclone(url, path)
+    def download(cls, urls,path):
+        p = Pool(10)
+        p.map(cls.gitclone, urls)
+        
 
     def run(self):
         self.scheduler.add_new_urls(self.start_url)
@@ -27,17 +30,16 @@ class Manager(object):
             self.scheduler.add_new_urls(urls)
             for url in target_urls:
                 self.target_urls.append(url)
-        urls = self.scheduler.get_urls()
+        
         if not os.path.isdir("C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\"):
-            path = os.makedir(path="C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")
+            path = os.mkdir(path="C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")
             os.chdir(path)
         else:
-            os.chdir("C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")
-        for url in self.target_urls:
-            try:
-                Manager.download(url,path)
-            except Exception as e:
-                print(e)
+            os.chdir("C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")   
+        try:
+            Manager.download(urls = self.target_urls,path = path)
+        except Exception as e:
+            print(e)
 
 
 def main():
@@ -45,7 +47,7 @@ def main():
     manager.run()
 
 
-    pass
+
 
 if __name__ == "__main__":
     main()

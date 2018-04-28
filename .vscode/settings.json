@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "${workspaceFolder}/venv2/bin/python",
+    "git.ignoreLimitWarning": true
+}

@@ -1,4 +1,4 @@
-from urllib import request,error
+from urllib2 import request
 
 class Downloader(object):
 
@@ -6,5 +6,5 @@ class Downloader(object):
         if url is None:
             return None
         req = request.Request(url=url)
-        return req.urlopen(req).read()
+        return request.urlopen(req).read()
 

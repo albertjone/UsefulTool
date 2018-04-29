@@ -11,6 +11,7 @@ class Manager(object):
         self.scheduler = Scheduler()
         self.target_urls = list()
         self.start_url = start_url
+        self.page = 1
     @staticmethod    
     def gitclone(url,path):
         git.Git(path).clone(url+".git")
@@ -22,15 +23,22 @@ class Manager(object):
         
 
     def run(self):
-        self.scheduler.add_new_urls(self.start_url)
+        self.scheduler.add_new_url(self.start_url)
         while self.scheduler.has_url():
+            
             url = self.scheduler.get_url()
+            print("get page"+str(self.page)+":"+url)
+            if not url:
+                self.page += 1
             content = self.downloader.download(url)
             urls, target_urls = self.parser.parse(content)
-            self.scheduler.add_new_urls(urls)
+            for url in urls:
+                self.scheduler.add_new_url(url)
             for url in target_urls:
                 self.target_urls.append(url)
         
+        print("begin to clone ")
+        if os.
         if not os.path.isdir("C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\"):
             path = os.mkdir(path="C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")
             os.chdir(path)

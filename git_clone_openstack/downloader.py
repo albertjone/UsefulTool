@@ -1,10 +1,7 @@
-from urllib2 import request
+import urllib2
 
 class Downloader(object):
 
     def download(self, url):
-        if url is None:
-            return None
-        req = request.Request(url=url)
-        return request.urlopen(req).read()
+        return urllib2.urlopen(url=url).read()
 

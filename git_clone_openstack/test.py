@@ -9,6 +9,8 @@ from scheduler import Scheduler
 
 import os
 
+
+
 # path = os.mkdir(name="C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")
 # os.chdir(path="C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\")
 # print(os.getcwd())
@@ -16,12 +18,20 @@ import os
 downloader = Downloader()
 parser = MParser()
 scheduler = Scheduler()
-content = downloader.download(url="https://github.com/openstack")
-# urls, target_urls = parser.parse(content)
-# print(urls)
-# print(target_urls)
+content = downloader.download(url="https://github.com/openstack?page=2")
+if not content:
+    print("get content")
+urls, target_urls = parser.parse(content)
+print(urls)
+print(target_urls)
 
 
+		
+		
+		
+		
+		
+		
 
 
 

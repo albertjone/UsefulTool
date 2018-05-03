@@ -105,6 +105,31 @@ import git
 
 
 
-result = [lambda x: x + i for i in range(10)]
-print(result[0](10))
-print(len(result))
+# result = [lambda x: x + i for i in range(10)]
+# print(result[0](10))
+# print(len(result))
+
+
+
+import os
+from git import Repo
+url = os.getcwd()
+print url
+reps_url = "/home/openstack/Desktop/Openstack"
+# if url != "/home/mrrobot/Desktop/Openstack":
+if url != reps_url:    
+    os.chdir(reps_url)
+    print os.getcwd()
+repo_urls = os.listdir(os.getcwd())
+print("there are "+str(len(repo_urls))+" reps")
+repo = Repo(repo_urls[0])
+o = repo.remotes.origin 
+o.pull()
+# repo_urls = [repo_url for repo_url in os.listdir(os.getcwd()) if not Repo(repo_url).bare()]
+
+target_strs = [os.system('grep -rn "https://pypi.python.org/pypi" .')]
+print len(target_strs)
+
+
+
+

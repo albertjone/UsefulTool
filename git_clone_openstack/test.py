@@ -111,25 +111,54 @@ import git
 
 
 
-import os
-from git import Repo
-url = os.getcwd()
-print url
-reps_url = "/home/openstack/Desktop/Openstack"
-# if url != "/home/mrrobot/Desktop/Openstack":
-if url != reps_url:    
-    os.chdir(reps_url)
-    print os.getcwd()
-repo_urls = os.listdir(os.getcwd())
-print("there are "+str(len(repo_urls))+" reps")
-repo = Repo(repo_urls[0])
-o = repo.remotes.origin 
-o.pull()
-# repo_urls = [repo_url for repo_url in os.listdir(os.getcwd()) if not Repo(repo_url).bare()]
+# import os
+# from git import Repo
+# url = os.getcwd()
+# print url
+# reps_url = "/home/openstack/Desktop/Openstack"
+# # if url != "/home/mrrobot/Desktop/Openstack":
+# if url != reps_url:    
+#     os.chdir(reps_url)
+#     print os.getcwd()
+# repo_urls = os.listdir(os.getcwd())
+# print("there are "+str(len(repo_urls))+" reps")
+# repo = Repo(repo_urls[0])
+# o = repo.remotes.origin 
+# o.pull()
+# # repo_urls = [repo_url for repo_url in os.listdir(os.getcwd()) if not Repo(repo_url).bare()]
 
-target_strs = [os.system('grep -rn "https://pypi.python.org/pypi" .')]
-print len(target_strs)
-
-
+# target_strs = [os.system('grep -rn "https://pypi.python.org/pypi" .')]
+# print len(target_strs)
 
 
+import requests
+import json
+
+
+print os.getcwd()
+PATCH_FILE = os.getcwd()+"/patch.json"
+print PATCH_FILE
+RPM_PACKAGING_PATCH_URL = "https://review.openstack.org/changes/?q=project:openstack/rpm-packaging+status:open&n=75&O=81"
+r = requests.get(RPM_PACKAGING_PATCH_URL, timeout=10, headers={"Connection":"close"})
+with open("%s" % PATCH_FILE, "wb") as code:
+    code.write(r.content)
+os.system("sed -i '1d' %s" % PATCH_FILE)
+
+
+with open("%s" % PATCH_FILE, "r") as f:
+    context = json.load(f)
+len(context)
+
+for obj in context:
+    if cmp(obj.get("branch"), "master"):
+        continue
+    subject = obj.get("subject")
+    if not subject:
+        continue
+    print subject
+    lname = project_name.lower()
+    _str = "%s "%lname
+    if _str in subject.lower():
+        print "this is true"
+
+    

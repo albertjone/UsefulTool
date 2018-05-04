@@ -1,0 +1,1688 @@
+[
+  {
+    "id": "openstack%2Frpm-packaging~master~I0b73c07fcf4c51868241b7d887614d4f53fe0e87",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "update-oslotest",
+    "hashtags": [],
+    "change_id": "I0b73c07fcf4c51868241b7d887614d4f53fe0e87",
+    "subject": "Update oslotest to 3.4.2",
+    "status": "NEW",
+    "created": "2018-05-03 10:54:20.000000000",
+    "updated": "2018-05-03 11:51:10.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 566021,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I74ea2f852139edae9fbbe5ec9b2e0b6c7115d4b8",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "update-reno",
+    "hashtags": [],
+    "change_id": "I74ea2f852139edae9fbbe5ec9b2e0b6c7115d4b8",
+    "subject": "Update reno to 2.9.1",
+    "status": "NEW",
+    "created": "2018-05-03 10:59:52.000000000",
+    "updated": "2018-05-03 11:49:36.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 566024,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I0c2faf77b2252b8fc9c23d76523216930345da5e",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "neutron-lib",
+    "hashtags": [],
+    "change_id": "I0c2faf77b2252b8fc9c23d76523216930345da5e",
+    "subject": "Update neutron-lib to 1.14.0",
+    "status": "NEW",
+    "created": "2018-05-03 11:03:33.000000000",
+    "updated": "2018-05-03 11:14:47.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 566026,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I14dd69d862960d9c08de458ed8affa657274f219",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "oslo-db",
+    "hashtags": [],
+    "change_id": "I14dd69d862960d9c08de458ed8affa657274f219",
+    "subject": "Update oslo.db to 4.38.0",
+    "status": "NEW",
+    "created": "2018-04-17 07:22:18.000000000",
+    "updated": "2018-05-03 11:10:44.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 561805,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I59b6d00cf900f81a570ace7537d5f1718ffb9f37",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "update-tooz",
+    "hashtags": [],
+    "change_id": "I59b6d00cf900f81a570ace7537d5f1718ffb9f37",
+    "subject": "Update tooz to 1.62.0",
+    "status": "NEW",
+    "created": "2018-05-03 10:46:54.000000000",
+    "updated": "2018-05-03 11:06:25.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 566020,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fqueens~Ic44dd6e0ea75472023506f0753a87578885a5f1a",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/queens",
+    "topic": "stable-queens",
+    "hashtags": [],
+    "change_id": "Ic44dd6e0ea75472023506f0753a87578885a5f1a",
+    "subject": "python-ironic-inspector-client: Update to 3.1.1",
+    "status": "NEW",
+    "created": "2018-04-25 12:27:29.000000000",
+    "updated": "2018-05-03 10:39:46.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 564186,
+    "owner": {
+      "_account_id": 7102,
+      "name": "Thomas Bechtold",
+      "email": "tbechtold@suse.com",
+      "username": "toabctl"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "approved": {
+          "_account_id": 13294,
+          "name": "Javier Peña",
+          "email": "jpena@redhat.com",
+          "username": "jpena"
+        }
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fqueens~I7acc9bf267078cd4a629b8b15a2c5a46b25e11f7",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/queens",
+    "topic": "stable-queens",
+    "hashtags": [],
+    "change_id": "I7acc9bf267078cd4a629b8b15a2c5a46b25e11f7",
+    "subject": "python-glanceclient: Update to 2.10.0",
+    "status": "NEW",
+    "created": "2018-04-25 12:24:37.000000000",
+    "updated": "2018-05-03 10:39:34.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 564185,
+    "owner": {
+      "_account_id": 7102,
+      "name": "Thomas Bechtold",
+      "email": "tbechtold@suse.com",
+      "username": "toabctl"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "approved": {
+          "_account_id": 13294,
+          "name": "Javier Peña",
+          "email": "jpena@redhat.com",
+          "username": "jpena"
+        }
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fqueens~Ic89d61a86398f593400a45b8e10555df4ae7a3ad",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/queens",
+    "topic": "stable-queens",
+    "hashtags": [],
+    "change_id": "Ic89d61a86398f593400a45b8e10555df4ae7a3ad",
+    "subject": "aodhclient: Update to 1.0.0",
+    "status": "NEW",
+    "created": "2018-04-25 12:23:21.000000000",
+    "updated": "2018-05-03 10:39:16.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 2,
+    "deletions": 2,
+    "_number": 564183,
+    "owner": {
+      "_account_id": 7102,
+      "name": "Thomas Bechtold",
+      "email": "tbechtold@suse.com",
+      "username": "toabctl"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "approved": {
+          "_account_id": 13404,
+          "name": "Alberto Planas",
+          "email": "aplanas@gmail.com",
+          "username": "aplanas"
+        }
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fqueens~I86f5985657d79637ba12a0e8c7529007ef0311f0",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/queens",
+    "topic": "stable-queens",
+    "hashtags": [],
+    "change_id": "I86f5985657d79637ba12a0e8c7529007ef0311f0",
+    "subject": "python-openstackclient: Update to 3.14.1",
+    "status": "NEW",
+    "created": "2018-04-25 12:28:46.000000000",
+    "updated": "2018-05-03 10:38:55.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 564187,
+    "owner": {
+      "_account_id": 7102,
+      "name": "Thomas Bechtold",
+      "email": "tbechtold@suse.com",
+      "username": "toabctl"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "approved": {
+          "_account_id": 13294,
+          "name": "Javier Peña",
+          "email": "jpena@redhat.com",
+          "username": "jpena"
+        }
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ia40ad1329d61c9ba2609ba5b5e7d2249a2cc2ec0",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "cinder",
+    "hashtags": [],
+    "change_id": "Ia40ad1329d61c9ba2609ba5b5e7d2249a2cc2ec0",
+    "subject": "Initial spec for Cinder",
+    "status": "NEW",
+    "created": "2018-03-23 19:22:25.000000000",
+    "updated": "2018-05-03 09:18:49.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 459,
+    "deletions": 0,
+    "_number": 555906,
+    "owner": {
+      "_account_id": 13294,
+      "name": "Javier Peña",
+      "email": "jpena@redhat.com",
+      "username": "jpena"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I8e502c06a4da1933c30b6e1c5a3ae098fcb60285",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "add-python-vitrageclient",
+    "hashtags": [],
+    "change_id": "I8e502c06a4da1933c30b6e1c5a3ae098fcb60285",
+    "subject": "Add initial spec for python-vitrageclient",
+    "status": "NEW",
+    "created": "2016-09-22 01:50:13.000000000",
+    "updated": "2018-04-25 13:28:15.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 105,
+    "deletions": 0,
+    "_number": 374480,
+    "owner": {
+      "_account_id": 22266,
+      "name": "Tony Xu",
+      "email": "hhktony@gmail.com",
+      "username": "xutao"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "approved": {
+          "_account_id": 6593,
+          "name": "Dirk Mueller",
+          "email": "dirk@dmllr.de",
+          "username": "dmllr"
+        }
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ie2bdcb170275cd434f99a7df520782ed0633080e",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "oslo-utils",
+    "hashtags": [],
+    "change_id": "Ie2bdcb170275cd434f99a7df520782ed0633080e",
+    "subject": "Update oslo.utils to 3.36.1",
+    "status": "NEW",
+    "created": "2018-04-24 05:27:44.000000000",
+    "updated": "2018-04-25 09:51:05.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 2,
+    "deletions": 2,
+    "_number": 563823,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ibff416e7c26070ad23f2e00a89b3d29940675f25",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "tripleo-common",
+    "hashtags": [],
+    "change_id": "Ibff416e7c26070ad23f2e00a89b3d29940675f25",
+    "subject": "Update tripleo-common to 9.0.0",
+    "status": "NEW",
+    "created": "2018-04-20 03:30:56.000000000",
+    "updated": "2018-04-25 09:16:15.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 3,
+    "deletions": 3,
+    "_number": 562920,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I47d0ab1d3e1aa260f7a3d8fbd6c20ef9fd7672f9",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "keystonemiddleware",
+    "hashtags": [],
+    "change_id": "I47d0ab1d3e1aa260f7a3d8fbd6c20ef9fd7672f9",
+    "subject": "Update keystonemiddleware to 5.0.0",
+    "status": "NEW",
+    "created": "2018-04-20 03:12:21.000000000",
+    "updated": "2018-04-25 07:48:13.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 562917,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I58b31905d8bc389e1662af8f1af0be293e394845",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "oslo-log",
+    "hashtags": [],
+    "change_id": "I58b31905d8bc389e1662af8f1af0be293e394845",
+    "subject": "Update oslo.log to 3.38.0",
+    "status": "NEW",
+    "created": "2018-04-11 06:26:37.000000000",
+    "updated": "2018-04-25 07:47:56.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 560280,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I458b5cd0864c90c5c77cc6a7b3e1bdc89cace8f8",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "python-heatclient",
+    "hashtags": [],
+    "change_id": "I458b5cd0864c90c5c77cc6a7b3e1bdc89cace8f8",
+    "subject": "Update python-heatclient to 1.15.0",
+    "status": "NEW",
+    "created": "2018-04-20 02:36:10.000000000",
+    "updated": "2018-04-25 07:02:43.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 562911,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 7102,
+          "name": "Thomas Bechtold",
+          "email": "tbechtold@suse.com",
+          "username": "toabctl"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ie196dde4292f89720df72478b96d3ffeba10a71b",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "openstack-doc-tools",
+    "hashtags": [],
+    "change_id": "Ie196dde4292f89720df72478b96d3ffeba10a71b",
+    "subject": "Update openstack-doc-tools to 1.8.0",
+    "status": "NEW",
+    "created": "2018-01-18 12:44:20.000000000",
+    "updated": "2018-04-25 07:01:34.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 5,
+    "deletions": 3,
+    "_number": 535320,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 7102,
+          "name": "Thomas Bechtold",
+          "email": "tbechtold@suse.com",
+          "username": "toabctl"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ied667daf0cf79829acf06e8f7bab1f1eacb1e1ed",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "oslo-privsep",
+    "hashtags": [],
+    "change_id": "Ied667daf0cf79829acf06e8f7bab1f1eacb1e1ed",
+    "subject": "Update oslo.privsep to 1.29.0",
+    "status": "NEW",
+    "created": "2018-04-24 05:29:38.000000000",
+    "updated": "2018-04-25 05:48:28.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 563824,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": 1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ife14d314c3f1e8822e92df162a27b439c0084d92",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "update-futurist",
+    "hashtags": [],
+    "change_id": "Ife14d314c3f1e8822e92df162a27b439c0084d92",
+    "subject": "Update futurist to 1.7.0",
+    "status": "NEW",
+    "created": "2018-04-24 05:25:11.000000000",
+    "updated": "2018-04-25 05:48:15.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 2,
+    "deletions": 2,
+    "_number": 563821,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": 1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I8fc81faea5eda9c6a3bbf8d755e161eaa72dc417",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "hashtags": [],
+    "change_id": "I8fc81faea5eda9c6a3bbf8d755e161eaa72dc417",
+    "subject": "Update python-scciclient to 0.6.1",
+    "status": "NEW",
+    "created": "2018-03-21 12:01:22.000000000",
+    "updated": "2018-04-25 05:41:13.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 554886,
+    "owner": {
+      "_account_id": 16367,
+      "name": "Anusree A",
+      "email": "anusree.a04@gmail.com",
+      "username": "anusree"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 13294,
+          "name": "Javier Peña",
+          "email": "jpena@redhat.com",
+          "username": "jpena"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I948c5817acc9d1100dc52b3ff9f2f39c10b41692",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "oslo-service",
+    "hashtags": [],
+    "change_id": "I948c5817acc9d1100dc52b3ff9f2f39c10b41692",
+    "subject": "Update oslo.service to 1.31.1",
+    "status": "NEW",
+    "created": "2018-04-18 03:15:31.000000000",
+    "updated": "2018-04-25 05:36:06.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 562101,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "approved": {
+          "_account_id": 7102,
+          "name": "Thomas Bechtold",
+          "email": "tbechtold@suse.com",
+          "username": "toabctl"
+        }
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ia4ceed4553ccc92886661b7893384a9b0812fa6c",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "python-saharaclient",
+    "hashtags": [],
+    "change_id": "Ia4ceed4553ccc92886661b7893384a9b0812fa6c",
+    "subject": "Update python-saharaclient to 1.6.0",
+    "status": "NEW",
+    "created": "2018-04-20 02:25:42.000000000",
+    "updated": "2018-04-25 05:35:53.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 562905,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 26297,
+          "name": "kaka",
+          "email": "huang.zhiping@99cloud.net",
+          "username": "huang.zhiping"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I5f71beed0cbb28f277b8cf13734e52c2cfc2ff34",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "oslo-config",
+    "hashtags": [],
+    "change_id": "I5f71beed0cbb28f277b8cf13734e52c2cfc2ff34",
+    "subject": "Update oslo.config to 6.2.0",
+    "status": "NEW",
+    "created": "2018-03-27 21:51:08.000000000",
+    "updated": "2018-04-24 05:37:03.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 557072,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I4a3b74d9eac4144aa2a677c5fd174897bf2799bf",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "add-keystone-tempest-plugin",
+    "hashtags": [],
+    "change_id": "I4a3b74d9eac4144aa2a677c5fd174897bf2799bf",
+    "subject": "Added initial spec file for keystone-tempest-plugin",
+    "status": "NEW",
+    "created": "2017-09-11 10:41:35.000000000",
+    "updated": "2018-04-16 06:10:35.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 79,
+    "deletions": 0,
+    "_number": 502445,
+    "owner": {
+      "_account_id": 12393,
+      "name": "Chandan Kumar",
+      "email": "chkumar@redhat.com",
+      "username": "chkumar246"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 7102,
+          "name": "Thomas Bechtold",
+          "email": "tbechtold@suse.com",
+          "username": "toabctl"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~If1ce7c0454ff0f7e8dc6de186dcdff99870cf8c8",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "uncap-eventlet",
+    "hashtags": [],
+    "change_id": "If1ce7c0454ff0f7e8dc6de186dcdff99870cf8c8",
+    "subject": "uncap eventlet",
+    "status": "NEW",
+    "created": "2018-04-11 16:02:48.000000000",
+    "updated": "2018-04-12 10:30:26.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 560538,
+    "owner": {
+      "_account_id": 2472,
+      "name": "Doug Hellmann",
+      "email": "doug@doughellmann.com",
+      "username": "doug-hellmann"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I7a69d4d1ad195dbe6b45fe100c0552d64e7de42f",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "hashtags": [],
+    "change_id": "I7a69d4d1ad195dbe6b45fe100c0552d64e7de42f",
+    "subject": "Update neutron to 12.0.1",
+    "status": "NEW",
+    "created": "2018-03-28 16:51:47.000000000",
+    "updated": "2018-04-04 23:23:32.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 557435,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 21486,
+          "name": "wangqi",
+          "email": "wang.qi@99cloud.net",
+          "username": "wangqi"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fqueens~I218aacaa1ab498565312782d30ae5adaae767c00",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/queens",
+    "topic": "queens",
+    "hashtags": [],
+    "change_id": "I218aacaa1ab498565312782d30ae5adaae767c00",
+    "subject": "Add magnum tempest plugin package",
+    "status": "NEW",
+    "created": "2018-03-28 09:27:05.000000000",
+    "updated": "2018-03-29 09:58:01.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 76,
+    "deletions": 0,
+    "_number": 557272,
+    "owner": {
+      "_account_id": 9178,
+      "name": "Sayali Lunkad",
+      "email": "sayali.lunkad@suse.com",
+      "username": "sayalilunkad"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 6593,
+          "name": "Dirk Mueller",
+          "email": "dirk@dmllr.de",
+          "username": "dmllr"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fpike~Ifa7a9745984f1c73735deab857af0fe33446c075",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/pike",
+    "hashtags": [],
+    "change_id": "Ifa7a9745984f1c73735deab857af0fe33446c075",
+    "subject": "Revert vmware-nsx to previous release",
+    "status": "NEW",
+    "created": "2018-03-09 20:03:41.000000000",
+    "updated": "2018-03-22 13:03:57.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 2,
+    "deletions": 2,
+    "_number": 551361,
+    "owner": {
+      "_account_id": 12907,
+      "name": "Jan Zerebecki",
+      "email": "jan.openstack@zerebecki.de",
+      "username": "jzerebecki"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "value": 1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 6593,
+          "name": "Dirk Mueller",
+          "email": "dirk@dmllr.de",
+          "username": "dmllr"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fpike~I77c928cdd5cb1547578542dbdd7159d290972147",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/pike",
+    "hashtags": [],
+    "change_id": "I77c928cdd5cb1547578542dbdd7159d290972147",
+    "subject": "Fix source and version for vmware-nsx 11.0.1.dev86",
+    "status": "NEW",
+    "created": "2018-03-09 13:26:32.000000000",
+    "updated": "2018-03-22 07:53:24.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 3,
+    "deletions": 3,
+    "_number": 551276,
+    "owner": {
+      "_account_id": 12907,
+      "name": "Jan Zerebecki",
+      "email": "jan.openstack@zerebecki.de",
+      "username": "jzerebecki"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "rejected": {
+          "_account_id": 6593,
+          "name": "Dirk Mueller",
+          "email": "dirk@dmllr.de",
+          "username": "dmllr"
+        },
+        "blocking": true
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I2820bd97e86892e1ab22eedbf806582baf90f8c7",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "dragonflow",
+    "hashtags": [],
+    "change_id": "I2820bd97e86892e1ab22eedbf806582baf90f8c7",
+    "subject": "Add intial spec for Dragonflow",
+    "status": "NEW",
+    "created": "2017-09-03 12:42:43.000000000",
+    "updated": "2018-01-22 10:38:37.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 563,
+    "deletions": 0,
+    "_number": 500360,
+    "owner": {
+      "_account_id": 20229,
+      "name": "Omer Anson",
+      "email": "omer.anson@toganetworks.com",
+      "username": "oanson"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I1058cb7e4c034484e0d6e2bb1041d4efccca74bd",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "379784",
+    "hashtags": [],
+    "change_id": "I1058cb7e4c034484e0d6e2bb1041d4efccca74bd",
+    "subject": "[WIP] Add initial template for Ceilometer",
+    "status": "NEW",
+    "created": "2016-09-29 19:39:08.000000000",
+    "updated": "2017-12-18 04:47:01.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 558,
+    "deletions": 0,
+    "_number": 379784,
+    "owner": {
+      "_account_id": 16574,
+      "name": "Alexander Tsamutali",
+      "email": "atsamutali@mirantis.com",
+      "username": "astsmtl"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 20656,
+          "name": "Fuel Packaging CI",
+          "email": "ci+fuel-packaging@mirantis.com",
+          "username": "fuel-packaging-ci"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fpike~I634574cdf3cb80bec56c200663d5aec62ee04003",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/pike",
+    "topic": "stable/Pike",
+    "hashtags": [],
+    "change_id": "I634574cdf3cb80bec56c200663d5aec62ee04003",
+    "subject": "nova: Track stable-pike",
+    "status": "NEW",
+    "created": "2017-09-25 18:13:54.000000000",
+    "updated": "2017-12-18 01:31:26.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 17,
+    "deletions": 15,
+    "_number": 507225,
+    "owner": {
+      "_account_id": 17130,
+      "name": "melissaml",
+      "email": "ma.lei@99cloud.net",
+      "username": "malei"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 22348,
+          "name": "Zuul",
+          "username": "zuul"
+        },
+        "disliked": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 6593,
+          "name": "Dirk Mueller",
+          "email": "dirk@dmllr.de",
+          "username": "dmllr"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Focata~I2fbf4ea3ccb8f215cb2de78506649226c68b18ee",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/ocata",
+    "topic": "tooz",
+    "hashtags": [],
+    "change_id": "I2fbf4ea3ccb8f215cb2de78506649226c68b18ee",
+    "subject": "update tooz to 1.48.2 for ocata",
+    "status": "NEW",
+    "created": "2017-12-08 09:15:50.000000000",
+    "updated": "2017-12-11 07:42:43.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 526632,
+    "owner": {
+      "_account_id": 26569,
+      "name": "陶冶",
+      "email": "taoy10@chinaunicom.cn",
+      "username": "YeTao"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {},
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Icdda110c19509dbd66a00609c625b38767e6961f",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "hashtags": [],
+    "change_id": "Icdda110c19509dbd66a00609c625b38767e6961f",
+    "subject": "Remove documentation-build error flag globally on prepare cleanup",
+    "status": "NEW",
+    "created": "2017-09-25 16:53:32.000000000",
+    "updated": "2017-09-26 17:35:56.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 5,
+    "deletions": 2,
+    "_number": 507209,
+    "owner": {
+      "_account_id": 6593,
+      "name": "Dirk Mueller",
+      "email": "dirk@dmllr.de",
+      "username": "dmllr"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 7102,
+          "name": "Thomas Bechtold",
+          "email": "tbechtold@suse.com",
+          "username": "toabctl"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~Ib3301ce22a618e85103499aa8de5375af3973326",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "hashtags": [],
+    "change_id": "Ib3301ce22a618e85103499aa8de5375af3973326",
+    "subject": "Remove explict sed for doc build warnings",
+    "status": "NEW",
+    "created": "2017-09-25 16:53:32.000000000",
+    "updated": "2017-09-26 08:10:59.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": false,
+    "submittable": false,
+    "insertions": 2,
+    "deletions": 74,
+    "_number": 507210,
+    "owner": {
+      "_account_id": 6593,
+      "name": "Dirk Mueller",
+      "email": "dirk@dmllr.de",
+      "username": "dmllr"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 3,
+          "name": "Jenkins",
+          "username": "jenkins"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 7102,
+          "name": "Thomas Bechtold",
+          "email": "tbechtold@suse.com",
+          "username": "toabctl"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I5fa7e9c88d6b9bd3f101671aefa90baad450c75e",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "mymistralclient",
+    "hashtags": [],
+    "change_id": "I5fa7e9c88d6b9bd3f101671aefa90baad450c75e",
+    "subject": "Package documentation for mistralclient",
+    "status": "NEW",
+    "created": "2017-08-14 08:02:44.000000000",
+    "updated": "2017-09-25 12:12:45.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 2,
+    "deletions": 1,
+    "_number": 493470,
+    "owner": {
+      "_account_id": 6593,
+      "name": "Dirk Mueller",
+      "email": "dirk@dmllr.de",
+      "username": "dmllr"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 3,
+          "name": "Jenkins",
+          "username": "jenkins"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 13404,
+          "name": "Alberto Planas",
+          "email": "aplanas@gmail.com",
+          "username": "aplanas"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~stable%2Fpike~Ia5fac009c3e87941fdab67cab7e9dd71550255c6",
+    "project": "openstack/rpm-packaging",
+    "branch": "stable/pike",
+    "topic": "stable-pike",
+    "hashtags": [],
+    "change_id": "Ia5fac009c3e87941fdab67cab7e9dd71550255c6",
+    "subject": "openstack-doc-tools: Update to 1.6.0",
+    "status": "NEW",
+    "created": "2017-09-21 08:17:19.000000000",
+    "updated": "2017-09-21 08:52:40.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 1,
+    "deletions": 1,
+    "_number": 506051,
+    "owner": {
+      "_account_id": 7102,
+      "name": "Thomas Bechtold",
+      "email": "tbechtold@suse.com",
+      "username": "toabctl"
+    },
+    "labels": {
+      "Verified": {
+        "disliked": {
+          "_account_id": 23181,
+          "name": "RDO Third Party CI",
+          "email": "dmsimard+rdothirdparty@redhat.com",
+          "username": "rdothirdparty"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 13294,
+          "name": "Javier Peña",
+          "email": "jpena@redhat.com",
+          "username": "jpena"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  },
+  {
+    "id": "openstack%2Frpm-packaging~master~I25e26de4d73185cf7e59452db44fe3a6a1123256",
+    "project": "openstack/rpm-packaging",
+    "branch": "master",
+    "topic": "swift",
+    "hashtags": [],
+    "change_id": "I25e26de4d73185cf7e59452db44fe3a6a1123256",
+    "subject": "Initial spec for swift",
+    "status": "NEW",
+    "created": "2017-02-21 19:30:25.000000000",
+    "updated": "2017-06-15 13:34:16.000000000",
+    "submit_type": "MERGE_IF_NECESSARY",
+    "mergeable": true,
+    "submittable": false,
+    "insertions": 603,
+    "deletions": 0,
+    "_number": 436611,
+    "owner": {
+      "_account_id": 6593,
+      "name": "Dirk Mueller",
+      "email": "dirk@dmllr.de",
+      "username": "dmllr"
+    },
+    "labels": {
+      "Verified": {
+        "recommended": {
+          "_account_id": 3,
+          "name": "Jenkins",
+          "username": "jenkins"
+        },
+        "disliked": {
+          "_account_id": 19648,
+          "name": "SUSE CI",
+          "email": "tbechtold+suse-cloud-ci@suse.de",
+          "username": "suse-ci"
+        },
+        "value": -1
+      },
+      "Code-Review": {
+        "disliked": {
+          "_account_id": 13294,
+          "name": "Javier Peña",
+          "email": "jpena@redhat.com",
+          "username": "jpena"
+        },
+        "value": -1
+      },
+      "Workflow": {}
+    }
+  }
+]

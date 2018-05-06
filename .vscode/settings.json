@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/py2venvmanjaro/bin/python",
+    "python.pythonPath": "${workspaceFolder}/venv2ubuntu/bin/python",
     "git.ignoreLimitWarning": true
 }

@@ -72,12 +72,21 @@ print queue.qsize()
 
 
 
-import os 
-import git
-import constants
-os.chdir("/home/openstack/Desktop/Openstack/performance-docs")
-print("in commit progress")
-print(os.getcwd())
-os.system("git add .")
-os.system('git commit --message="Trivial: Update pypi url to new url"')
-os.system('git review')
+# import os 
+# import git
+# import constants
+# os.chdir("/home/openstack/Desktop/Openstack/performance-docs")
+# print("in commit progress")
+# print(os.getcwd())
+# os.system("git add .")
+# os.system('git commit --message="Trivial: Update pypi url to new url"')
+# os.system('git review')
+
+
+
+import commands
+print "command test"
+print commands.getstatusoutput("/home/mrrobot/Desktop/Openstack/python-novaclient")
+print commands.getstatusoutput("git add .")
+print commands.getstatusoutput("git commit --message 'this is test'")
+print commands.getstatusoutput("git review")

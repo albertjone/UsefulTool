@@ -16,6 +16,7 @@ class Updater(threading.Thread):
         folders = os.listdir(constants.REPOSITORY_FOLDER)
         for folder in folders:
             self.thread_pool.put_git_folder(folder)
+            self.thread_pool.add_git_folder_count()
     def run(self):
         while(True):
             time.sleep(7200)

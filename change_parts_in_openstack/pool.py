@@ -16,14 +16,22 @@ class Pool(object):
         self.git_finds = Queue.Queue()
         self.git_commits = Queue.Queue()
         self.git_search_folder = Queue.Queue()
-        self.old_pages = []    
+        self.old_pages = [] 
 
+        self.page_count = 0
+        self.git_url_count = 0
+        self.git_folder = 0
+        self.git_find = 0
+        self.git_commit = 0
+        self.git_search_folder_count = 0
+        
 
         self.spider_count = 0
         self.gitcloner_count = 0
         self.updater_count = 0
         self.searcher_count = 0
         self.commiter_count = 0
+
 
         self.spider_processes = []
         self.gitcloner_processes = []
@@ -34,7 +42,58 @@ class Pool(object):
         self.__init_thread_pool()
 
 
+        self.page_count = 0
+        self.git_url_count = 0
+        self.git_folder_count = 0
+        self.git_find_count = 0
+        self.git_commit_count = 0
+        self.git_search_folder_count = 0        
+        
+        
+    def add_page_count(self):
+        self.page_count += 1
+    
+    
+    def add_git_url_count(self):
+        self.git_url_count += 1
+    
 
+    def add_git_folder_count(self):
+        self.git_folder_count += 1
+    
+    def add_git_find_count(self):
+        self.git_find_count += 1
+
+    
+    def add_commit_count(self):
+        self.git_commit_count +=1
+    
+    def add_search_folder_count(self):
+        self.git_search_folder_count += 1
+
+    def get_page_count(self):
+        self.page_count += 1
+    
+    
+    def get_git_url_count(self):
+        self.git_url_count += 1
+    
+
+    def get_git_folder_count(self):
+        self.git_folder_count += 1
+    
+    def get_git_find_count(self):
+        self.git_find_count += 1
+
+    
+    def get_commit_count(self):
+        self.git_commit_count +=1
+    
+    def get_search_folder_count(self):
+        self.git_search_folder_count += 1
+
+
+        
     #initial processes pool
     def __init_thread_pool(self):
         self.page_urls.put(constants.START_URL)

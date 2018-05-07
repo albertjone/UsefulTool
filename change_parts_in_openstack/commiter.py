@@ -3,7 +3,7 @@ import time
 import git
 import constants
 import os 
-
+import commands
 class Commiter(threading.Thread):
     def __init__(self,thread_pool):
         threading.Thread.__init__(self)
@@ -16,9 +16,7 @@ class Commiter(threading.Thread):
                                             self.thread_pool.get_git_commit()) 
                 
                 os.chdir("/home/openstack/Desktop/Openstack/performance-docs")
-                print("in commit progress")
-                print(os.getcwd())
-                os.system("git add .")
+                ("git add .")
                 os.system('git commit --message="Trivial: Update pypi url to new url"')
                 os.system('git review')
             except Exception:

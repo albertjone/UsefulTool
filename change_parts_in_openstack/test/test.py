@@ -86,7 +86,7 @@ print queue.qsize()
 
 import commands
 print "command test"
-print commands.getstatusoutput("/home/mrrobot/Desktop/Openstack/python-novaclient")
+print commands.getstatusoutput("cd /home/mrrobot/Desktop/Openstack/python-novaclient")
 print commands.getstatusoutput("git add .")
 print commands.getstatusoutput("git commit --message 'this is test'")
 print commands.getstatusoutput("git review")

@@ -10,7 +10,7 @@ START_URL = "https://github.com/openstack"
 SPIDER_WAIT = 3
 
 #GitClone
-REPOSITORY_FOLDER = "/home/mrrobot/Desktop/OpenstackTest"
+REPOSITORY_FOLDER = "/home/openstack/Desktop/OpenstackTest"
 
 
 

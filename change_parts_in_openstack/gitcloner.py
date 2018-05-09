@@ -20,6 +20,7 @@ class GitCloner(threading.Thread):
                     git.Git(repository_folder).clone(git_url+".git")
             except Exception:
                 print("error in process gitclone")
+                self.thread_pool.put_git_url(git_url)
             if self.thread_pool.git_urls.qsize <= 0:
                 time.sleep(constants.GITCLONER_COUNT)
                 if self.thread_pool.git_urls.qsize <= 0:

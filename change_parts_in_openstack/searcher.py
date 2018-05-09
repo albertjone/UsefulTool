@@ -33,27 +33,25 @@ class Searcher(threading.Thread):
             if self.thread_pool.git_search_folder.qsize() <= 0:
                 break
 
-    def __replace_dest_with_certain(self,path = None, patten = None,repl = None):
+    def _replace_dest_with_certain(self,path = None, patten = None,repl = None):
         if path is None:
             print "path is None"
             return
-        if not os.path.isdir():
-            print "path is not a folder"
-            return
-        arr = path.split('/')
-        if not arr[-1].startswith('.'): 
-            terms = os.listdir(path)
-            for term in terms:
-                path = os.path.join(path,term)
-                if os.path.isdir(path):
-                    self.__replace_dest_with_certain(path,patten,repl)
-                else:
-                    if path.split('.')[-1].lower() in constants.FILE_TYPE:
-                        return
-                    data = open(path).read()
-                    data = re.sub(patten,repl,data)
-                    print("data in searcher progress"+ data)
-                    open(path,'wb').write(data)
+        all_file_list = os.listdir(path)
+        for file in all_file_list:
+            file_path = os.path.join(path,file)
+            if os.path.isdir(file_path):
+                self._replace_dest_with_certain(file_path,patten=patten,repl=repl)     
+            else:
+                if not file_path.split('.')[-1].lower() in constants.FILE_TYPE:
+                    try:     
+                        data = open(file_path).read()
+                        new_data = re.sub(patten,repl,data)
+                        open(file_path,'wb').write(new_data)
+                        if data != new_data:
+                            print(file_path) 
+                    except Exception :
+                        print("failure path:"+file_path)
 
                     
                 

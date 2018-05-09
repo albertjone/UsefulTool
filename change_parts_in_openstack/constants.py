@@ -25,3 +25,9 @@ FILE_TYPE = ['gif','png','bmp','jpg','jpeg','rar','zip',
 COMMIT_WAIT = 3
 COMMIT_MESSAGE = "Trivial: Update pypi url to new url"
 #  "Trivial: Update pypi url to new url"
+
+#process S
+CLONER_DELAY = 60
+SEARCHER_DELAY = 120
+COMMITER_DELAY = 120
+UPDATER_DELAY = 7200

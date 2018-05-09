@@ -84,9 +84,63 @@ print queue.qsize()
 
 
 
-import commands
-print "command test"
-print commands.getstatusoutput("cd /home/mrrobot/Desktop/Openstack/python-novaclient")
-print commands.getstatusoutput("git add .")
-print commands.getstatusoutput("git commit --message 'this is test'")
-print commands.getstatusoutput("git review")
+# import commands
+# print "command test"
+# print commands.getstatusoutput("cd /home/mrrobot/Desktop/Openstack/python-novaclient")
+# print commands.getstatusoutput("git add .")
+# print commands.getstatusoutput("git commit --message 'this is test'")
+# print commands.getstatusoutput("git review")
+
+import os
+import constants
+import re
+import commands,time
+def _replace_dest_with_certain(path = None, patten = None,repl = None):
+        if path is None:
+            print "path is None"
+            return
+        all_file_list = os.listdir(path)
+        for file in all_file_list:
+            file_path = os.path.join(path,file)
+            if os.path.isdir(file_path):
+                _replace_dest_with_certain(file_path,patten=patten,repl=repl)     
+            else:
+                if not file_path.split('.')[-1].lower() in constants.FILE_TYPE:
+                    try:     
+                        data = open(file_path).read()
+                        new_data = re.sub(patten,repl,data)
+                        open(file_path,'wb').write(new_data)
+                        if data != new_data:
+                            print(file_path) 
+                    except Exception :
+                        print("failure path:"+file_path)
+                     
+
+_replace_dest_with_certain(path="/home/mrrobot/Desktop/Openstack/python-novaclient",
+                            patten="https://pypi.python.org/pypi",
+                            repl="https://pypi.org/project")
+
+
+
+os.chdir("/home/mrrobot/Desktop/Openstack/python-novaclient")
+if(commands.getstatusoutput(" git add .")[0] == 0):
+    print "ok"
+start = time.time()
+print(start)
+if(commands.getstatusoutput('git commit --message="Trivial: Update pypi url to new url"')[0] ==0):
+    print("commit sucessfully")
+print(commands.getstatusoutput('git review'))
+if (commands.getstatusoutput('git review')[0] != 0):
+    print("git review fail")
+
+
+
+
+
+
+
+
+
+
+
+

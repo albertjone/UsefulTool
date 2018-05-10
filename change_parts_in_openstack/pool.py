@@ -140,7 +140,7 @@ class Pool(object):
         for item in self.updater_processes:
             item.start()
 
-    def get_page(self):
+    def get_page_url(self):
         page_url = self.page_urls.get()
         self.old_pages.append(page_url)
         return page_url

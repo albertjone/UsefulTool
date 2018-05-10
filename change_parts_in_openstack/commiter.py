@@ -4,17 +4,27 @@ import git
 import constants
 import os 
 import commands
+import logging
 class Commiter(threading.Thread):
     def __init__(self,thread_pool):
         threading.Thread.__init__(self)
         self.thread_pool = thread_pool
+        self.logger = logging.getLogger('commiter.Commiter')
+        self.logger.info('creating an instance of Commiter')
+        self.logger.setLevel(logging.INFO)
+        # create file handler which logs even debug messages
+        fh = logging.FileHandler('commiter.log')
+        fh.setLevel(logging.INFO)
+        # create console handler with a higher log level
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.INFO)
+        self.logger.addHandler(fh)
+        self.logger.addHandler(ch)
     def run(self):
         while(True):
-            time.sleep(constants.COMMIT_WAIT)
             try:
                 commit_folder = os.path.join(constants.REPOSITORY_FOLDER,
-                                            self.thread_pool.get_git_commit()) 
-                
+                                            self.thread_pool.get_git_commit()[1])                
                 os.chdir(commit_folder)
                 if(commands.getstatusoutput(" git add .")[0] != 0):
                     print("add fails")
@@ -26,6 +36,7 @@ class Commiter(threading.Thread):
                 if (commands.getstatusoutput('git review')[0] != 0):
                     print("git review fail")
                     self.thread_pool.put_git_commit(commit_folder)
+                    self.logger.info(commit_folder)
                     commands.getstatusoutput("git reset --hard HEAD^")
                 
             except Exception:

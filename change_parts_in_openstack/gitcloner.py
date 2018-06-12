@@ -12,6 +12,13 @@ class GitCloner(threading.Thread):
         threading.Thread.__init__(self)
         self.thread_pool = thread_pool
         self.repository_folder = constants.REPOSITORY_FOLDER
+        self.logger = logging.Logger('gitcloner')
+        self.logger.info('create a instance of gitcloner')
+        fh = logging.FileHandler(constants.LOGPATH+'gitcloner.log')
+        ch = logging.StreamHandler()
+        self.logger.setLevel(logging.INFO)
+        self.logger.addHandler(fh)
+        self.logger.addHandler(ch)
     def run(self):
         repository_folder = self.repository_folder
         if not os.path.isdir(self.repository_folder):
@@ -23,12 +30,11 @@ class GitCloner(threading.Thread):
             try:
                 if not os.path.isdir(git_url[1]):
                     git.Git(repository_folder).clone(git_url_str)
-                    self.thread_pool.put_git_folder(git_url[1])
-                    self.thread_pool.put_git_search_folder(git_url[1])
+                self.thread_pool.put_git_search_folder(git_url[1])                   
             except Exception as e:
-                print("error in process gitclone")
-                print e
+                self.logger.error('error in gitcloner:'+str(e))
                 self.thread_pool.put_git_url(git_url[1])
+            
             if self.thread_pool.git_urls.qsize <= 0:
                 time.sleep(constants.GITCLONER_COUNT)
                 if self.thread_pool.git_urls.qsize <= 0:

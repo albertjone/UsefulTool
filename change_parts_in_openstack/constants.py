@@ -10,8 +10,8 @@ START_URL = "https://github.com/openstack"
 SPIDER_WAIT = 3
 
 #GitClone
-# REPOSITORY_FOLDER = "/home/openstack/Desktop/OpenstackTest"
-REPOSITORY_FOLDER = "/home/mrrobot/Desktop/Openstack"
+REPOSITORY_FOLDER = "/home/openstack/Desktop/OpenstackTest/"
+# REPOSITORY_FOLDER = "/home/mrrobot/Desktop/Openstack"
 
 
 #Search
@@ -31,3 +31,7 @@ CLONER_DELAY = 60
 SEARCHER_DELAY = 120
 COMMITER_DELAY = 120
 UPDATER_DELAY = 7200
+
+
+#log configuration
+LOGPATH = '/home/openstack/UsefulTool/change_parts_in_openstack/logs'

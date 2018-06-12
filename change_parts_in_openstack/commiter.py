@@ -13,7 +13,7 @@ class Commiter(threading.Thread):
         self.logger.info('creating an instance of Commiter')
         self.logger.setLevel(logging.INFO)
         # create file handler which logs even debug messages
-        fh = logging.FileHandler('commiter.log')
+        fh = logging.FileHandler(constants.LOGPATH+'commiter.log')
         fh.setLevel(logging.INFO)
         # create console handler with a higher log level
         ch = logging.StreamHandler()
@@ -36,8 +36,10 @@ class Commiter(threading.Thread):
                 if (commands.getstatusoutput('git review')[0] != 0):
                     print("git review fail")
                     self.thread_pool.put_git_commit(commit_folder)
-                    self.logger.info(commit_folder)
+                    self.logger.info("failed to commit"+commit_folder+
+                                        "current commit_folder's size is:"+
+                                        str(self.thread_pool.get_git_folder_count))
                     commands.getstatusoutput("git reset --hard HEAD^")
                 
-            except Exception:
-                print("problem in commit progress")
+            except Exception as e:
+                self.logger.ifno('error in commiter'+e)

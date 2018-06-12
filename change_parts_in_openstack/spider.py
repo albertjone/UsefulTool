@@ -14,7 +14,7 @@ class Spider(threading.Thread):
         self.logger.info('creating an instance of spider')
         self.logger.setLevel(logging.INFO)
         # create file handler which logs even debug messages
-        fh = logging.FileHandler('spider.log')
+        fh = logging.FileHandler(constants.LOGPATH+'spider.log')
         fh.setLevel(logging.INFO)
         # create console handler with a higher log level
         ch = logging.StreamHandler()

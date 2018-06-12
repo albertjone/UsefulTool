@@ -16,7 +16,7 @@ class Searcher(threading.Thread):
         self.logger.info('creating an instance of Searcher')
         self.logger.setLevel(logging.INFO)
         # create file handler which logs even debug messages
-        fh = logging.FileHandler('searcher.log')
+        fh = logging.FileHandler(constants.LOGPATH+'searcher.log')
         fh.setLevel(logging.INFO)
         # create console handler with a higher log level
         ch = logging.StreamHandler()
@@ -41,7 +41,9 @@ class Searcher(threading.Thread):
                     self.logger.info(git_folder_str)
                     commit_flag[0] = False
             except Exception as e:
-                print e
+                self.logger.error('error in searcher and failed path is :'+
+                                    constants.REPOSITORY_FOLDER+git_folder+
+                                    str(e))
 
                 print "things are wrong in searcher process"
                 self.thread_pool.put_git_search_folder(git_folder)
@@ -68,10 +70,10 @@ class Searcher(threading.Thread):
                         open(file_path,'wb').write(new_data)
                         if data != new_data:
                             if(commit_flag[0] == False):
-                                commit_flag[0] = True
-                            print(file_path) 
+                                commit_flag[0] = True 
                     except Exception :
                         print("failure path:"+file_path)
+                        self.logger.info('error in searcher and failed path is:'+file_path)
 
                     
                 

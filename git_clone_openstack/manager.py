@@ -42,7 +42,7 @@ class Manager(object):
         
         if os.name == "posix":
             print("your current system is posix")
-            path = "/home/openstack/Desktop/Openstack"
+            path = "/root/GXJ/UsefulTool"
             if not os.path.isdir(path):
                 print("begin to create repository ")
                 path = os.mkdir(path)
@@ -70,7 +70,7 @@ class Manager(object):
 def gitclone(url):
     if not os.path.isdir(url):
         print("current download git is:"+url)
-        git.Git("/home/openstack/Desktop/Openstack").clone(url+".git")
+        git.Git("/root/GXJ/UsefulTool").clone(url+".git")
 
 
 def main():

@@ -3,6 +3,7 @@ from downloader import Downloader
 from mparser import MParser
 import os
 import git
+import setting
 # from multiprocessing import Process,Lock
 from multiprocessing import Pool
 class Manager(object):
@@ -22,7 +23,7 @@ class Manager(object):
         pool = Pool(10)
         if os.name == "posix":
             print("your current system is posix")
-            path = "/root/GXJ/UsefulTool"
+            path = setting.linux_path
             if not os.path.isdir(path):
                 print("begin to create repository ")
                 path = os.mkdir(path)
@@ -34,7 +35,7 @@ class Manager(object):
                 os.chdir(path)
         else:
             print("your current system is windowshood")
-            path = "C:\\Users\\Mr.Guan\\Desktop\\OpenstackREP\\"
+            path = setting.win_path
             if not os.path.isdir():
                 print("begin to create repository ")
                 path = os.mkdir(path)
@@ -75,7 +76,7 @@ class Manager(object):
 def gitclone(url):
     if not os.path.isdir(url):
         print("current download git is:"+url)
-        git.Git("/root/GXJ/UsefulTool").clone(url+".git")
+        git.Git(setting.linux_path).clone(url+".git")
 
 
 def main():

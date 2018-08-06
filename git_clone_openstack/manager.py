@@ -18,28 +18,8 @@ class Manager(object):
         
 
     def run(self):
-        self.scheduler.add_new_url(self.start_url)
-        # while self.scheduler.has_url():
-        count = 1
-        while count <=30:
-            
-            url = self.scheduler.get_url()
-            print("get page"+str(self.page)+":"+url)
-            if not url:
-                self.page += 1
-            try:
-                content = self.downloader.download(url)
-                urls, target_urls = self.parser.parse(content)
-                for url in urls:
-                    self.scheduler.add_new_url(url)
-                for url in target_urls:
-                    self.target_urls.append(url)
-                count += 1
-            except Exception as e:
-                print("get total"+str(count)+"pages")
-        print("get total:"+str(len(self.target_urls)))
-        print(self.target_urls[6])
-        
+        p = Pool(5)  
+        pool = Pool(10)
         if os.name == "posix":
             print("your current system is posix")
             path = "/root/GXJ/UsefulTool"
@@ -62,9 +42,34 @@ class Manager(object):
                 os.chdir(path)
                 print("current folder is :"+os.path.curdir())
             else:
-                os.chdir(path)   
+                os.chdir(path) 
         print("repository created")
-        return self.target_urls
+
+        self.scheduler.add_new_url(self.start_url)
+        # while self.scheduler.has_url():
+        count = 1
+        while count <=30:
+            url = self.scheduler.get_url()
+            print("get page"+str(self.page)+":"+url)
+            if not url:
+                self.page += 1
+            try:
+                content = self.downloader.download(url)
+                urls, target_urls = self.parser.parse(content)
+                for url in urls:
+                    self.scheduler.add_new_url(url)
+                for url in target_urls:
+                    self.target_urls.append(url)
+                count += 1
+                pool.map(gitclone, self.target_urls)            
+            except Exception as e:
+                print("get total"+str(count)+"pages")
+        print("get total:"+str(len(self.target_urls)))
+        print(self.target_urls[6])
+        
+ 
+#        return self.target_urls
+
 
 
 def gitclone(url):
@@ -77,9 +82,8 @@ def main():
     count = 0
     manager = Manager("https://github.com/openstack")
     target_urls = manager.run()
-    p = Pool(5)  
-    pool = Pool(10)
-    pool.map(gitclone, target_urls)
+
+
     
 
     # for target in target_urls:

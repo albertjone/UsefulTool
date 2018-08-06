@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/venvmac2/bin/python",
+    "python.pythonPath": "/usr/bin/python2.7",
     "git.ignoreLimitWarning": true
 }

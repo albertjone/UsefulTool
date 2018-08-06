@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/mrrobot/Desktop/UsefulTool/venv2"
+set -gx VIRTUAL_ENV "/Users/mrrobot/Desktop/UsefulTool/venvmac2"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

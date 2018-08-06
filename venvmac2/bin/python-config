@@ -1,4 +1,4 @@
-#!/Users/mrrobot/Desktop/UsefulTool/venv2/bin/python
+#!/Users/mrrobot/Desktop/UsefulTool/venvmac2/bin/python
 
 import sys
 import getopt

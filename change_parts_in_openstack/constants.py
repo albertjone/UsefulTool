@@ -6,11 +6,11 @@ COMMITER_COUNT = 4
 
 
 #Spider
-START_URL = "https://github.com/openstack"
+START_URL = u"https://github.com/openstack"
 SPIDER_WAIT = 3
 
 #GitClone
-REPOSITORY_FOLDER = "/home/openstack/Desktop/OpenstackTest/"
+REPOSITORY_FOLDER = u"/home/openstack/Desktop/OpenstackTest/"
 # REPOSITORY_FOLDER = "/home/mrrobot/Desktop/Openstack"
 
 
@@ -23,7 +23,7 @@ FILE_TYPE = ['gif','png','bmp','jpg','jpeg','rar','zip',
             'xlsx','ppt','pptx','pdf','gz','pyc','class']
 #Commit
 COMMIT_WAIT = 3
-COMMIT_MESSAGE = "Trivial: Update pypi url to new url"
+COMMIT_MESSAGE = u"Trivial: Update pypi url to new url"
 #  "Trivial: Update pypi url to new url"
 
 #process S
@@ -34,4 +34,4 @@ UPDATER_DELAY = 7200
 
 
 #log configuration
-LOGPATH = '/home/openstack/UsefulTool/change_parts_in_openstack/logs'
+LOGPATH = u'/home/openstack/UsefulTool/change_parts_in_openstack/logs'

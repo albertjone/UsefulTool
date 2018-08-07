@@ -21,7 +21,7 @@ class Manager(object):
     def run(self):
         p = Pool(5)  
         pool = Pool(10)
-        if os.name == "posix":
+	if os.name == "posix":
             print("your current system is posix")
             path = setting.linux_path
             if not os.path.isdir(path):
@@ -49,7 +49,7 @@ class Manager(object):
         self.scheduler.add_new_url(self.start_url)
         # while self.scheduler.has_url():
         count = 1
-        while count <=30:
+        while count <=57:
             url = self.scheduler.get_url()
             print("get page"+str(self.page)+":"+url)
             if not url:
@@ -62,7 +62,11 @@ class Manager(object):
                 for url in target_urls:
                     self.target_urls.append(url)
                 count += 1
-                pool.map(gitclone, self.target_urls)            
+                for url in self.target_urls:
+	            try: 
+		        gitclone(url)
+	            except Exception as e:
+		        print(e)            
             except Exception as e:
                 print("get total"+str(count)+"pages")
         print("get total:"+str(len(self.target_urls)))
@@ -77,11 +81,13 @@ def gitclone(url):
     if not os.path.isdir(url):
         print("current download git is:"+url)
         git.Git(setting.linux_path).clone(url+".git")
-
+    else:
+  	print("skip url is :"+url)
 
 def main():
     count = 0
     manager = Manager("https://github.com/openstack")
+
     target_urls = manager.run()
 
 

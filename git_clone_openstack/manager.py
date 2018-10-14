@@ -86,7 +86,7 @@ def gitclone(url):
 
 def main():
     count = 0
-    manager = Manager("https://github.com/openstack")
+    manager = Manager(setting.start_url)
 
     target_urls = manager.run()
 

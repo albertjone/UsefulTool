@@ -1,0 +1,10 @@
+账户, 联系方式," ",关联资源," "," "
+"","",序号,资源类别,资源名称,项目
+"用户邮箱1","手机号",1,云主机,instance1,project1
+"","",2,云主机,instance1,project1
+"","",1,云主机,instance1,project1
+"","",2,云主机,instance1,project1
+"用户邮箱1","手机号",3,云主机,instance1,project1
+"","",4,云主机,instance1,project1
+"","",5,云主机,instance1,project1
+

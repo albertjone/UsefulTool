@@ -47,7 +47,7 @@ def main():
 
     for repo in repo_path_list:
         q.put(path+repo,block=True,timeout=2)
-    for i in range(0,100):
+    for i in range(0,10000):
         git_pullers.append(GitPuller(q=q,name=i))
     start_time = time.time()
     print("start at:" + str(start_time))

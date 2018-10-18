@@ -46,11 +46,24 @@ data = [
     }
 ]
 
-# data = [
-#     {
-#         "email": "guan.xiaojue@99cloud.net",
-#     }
-# ]
+data = [
+    {
+        "email": "guan.xiaojue@99cloud.net",
+        "phone": "1881",
+        "resources": [
+            {
+                "type": "instance",
+                "name": "test-instance1",
+                "project": "default"
+            }, {
+                "type": "instance",
+                "name": "test-instance1",
+                "project": "default"
+            }
+        ],
+        "overdue_days": 12
+    }
+]
 
 
 resources = [

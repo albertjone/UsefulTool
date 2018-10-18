@@ -1,59 +1,69 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+#-*- coding=utf-8 -*-
 import xlsxwriter
 import json
 
 
 def create_xlsx(file_name, data):
-    write_header = False
+    # data = json.dumps(data,encoding='UTF-8', ensure_ascii=False)
+    write_header = True
+    firt_row = True
+    row_point = 0
     wbook = xlsxwriter.Workbook(file_name)
     wsheet = wbook.add_worksheet(file_name)
-    row_start = 0
     for item in data:
-        item_size = 0
+        item_size = 1
         for key in item.keys():
             if type(item[key]) is list:
-                item_size = len(item[key])
-        # import pdb;pdb.set_trace()
-        col_start = 0
-
+                item_size = len(item[key]) if len(item[key]) else item_size
+        col_point = 0
         for key in item.keys():
             if type(item[key]) is list:
-                if row_start <= 0 and write_header:
-                    wsheet.merge_range(row_start,
-                                       col_start,
+                if firt_row and write_header:
+                    row_point = 0
+                    wsheet.merge_range(row_point,
+                                       col_point,
                                        0,
-                                       col_start +
-                                       len(item[key][0].keys()) - 1,
-                                       key)   
-                for c_key in item[key][0]:
-                    if row_start <= 0 and write_header:
-                        wsheet.write(row_start + 1,
-                                     col_start,
-                                     c_key)
-                    for row_add in range(0, item_size):
-                        wsheet.write(row_start + row_add,
-                                     col_start,
-                                     item[key][row_add][c_key])
-                    col_start += 1
+                                       (col_point + len(item[key][0].keys())
+                                        ) if len(item[key]) != 0 else 1,
+                                       key)
+                    row_point = 2
+                if len(item[key]) > 0:
+                    for c_key in item[key][0]:
+                        if firt_row and write_header:
+                            row_point = 1
+                            wsheet.write(row_point,
+                                         col_point,
+                                         c_key)
+                            row_point = 2
+                        for row_add in range(0, item_size):
+                            wsheet.write(row_point + row_add,
+                                         col_point,
+                                         item[key][row_add][c_key])
+                        col_point += 1
                 continue
-            if row_start <= 0 and write_header:
-                wsheet.merge_range(row_start,
-                                   col_start,
-                                   row_start + 1,
-                                   col_start,
+            if firt_row and write_header:
+                row_point = 0
+                wsheet.merge_range(row_point,
+                                   col_point,
+                                   row_point + 1,
+                                   col_point,
                                    key)
-                continue
-            wsheet.merge_range(row_start,
-                               col_start,
-                               row_start + item_size - 1,
-                               col_start,
+                row_point = 2
+            if item_size == 1:
+                wsheet.write(row_point,
+                             col_point,
+                             item[key])
+            wsheet.merge_range(row_point,
+                               col_point,
+                               row_point + item_size - 1,
+                               col_point,
                                item[key])
-            col_start += 1
-        if row_start <= 0 and write_header:
-            row_start = 1
-        row_start += item_size
+            col_point += 1
+        if firt_row and write_header:
+            firt_row = False
+        row_point += item_size
     wbook.close()
 
 

@@ -1,8 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#-*- coding=utf-8 -*-
+# -*- coding=utf-8 -*-
 import xlsxwriter
 import json
+
+header_sequance = [
+    'email',
+    'phone',
+    {'resources': [
+        'type',
+        'name',
+        'project'
+    ]},
+    'overdue_days',
+]
 
 
 def create_xlsx(file_name, data):
@@ -22,11 +33,13 @@ def create_xlsx(file_name, data):
             if type(item[key]) is list:
                 if firt_row and write_header:
                     row_point = 0
+                    import pdb
+                    # pdb.set_trace()
                     wsheet.merge_range(row_point,
                                        col_point,
-                                       0,
-                                       (col_point + len(item[key][0].keys())
-                                        ) if len(item[key]) != 0 else 1,
+                                       0 if len(item[key]) != 0 else 1,
+                                       (col_point + len(item[key][0].keys())) if len(
+                                           item[key]) != 0 else col_point,
                                        key)
                     row_point = 2
                 if len(item[key]) > 0:
@@ -55,11 +68,12 @@ def create_xlsx(file_name, data):
                 wsheet.write(row_point,
                              col_point,
                              item[key])
-            wsheet.merge_range(row_point,
-                               col_point,
-                               row_point + item_size - 1,
-                               col_point,
-                               item[key])
+            else:
+                wsheet.merge_range(row_point,
+                                   col_point,
+                                   row_point + item_size - 1,
+                                   col_point,
+                                   item[key])
             col_point += 1
         if firt_row and write_header:
             firt_row = False

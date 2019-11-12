@@ -1,0 +1,18 @@
+---
+repo_base:
+  location: git@gitlab.sh.99cloud.net:openstack/
+  repo_names:
+    - horizon
+    - nova
+    - neutron
+    - cinder
+    - glance
+    - keystone
+    - ceilometer
+    - neutron-lib
+    - cloudkitty
+    - panko
+    - kolla
+    - kolla-ansible
+
+dest_dir: "/Users/xiaojueguan/code/Work/"

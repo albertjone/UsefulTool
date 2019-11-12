@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/robot/.virtualenvs/openstack/bin/python",
+    "python.pythonPath": ".tox/py37/bin/python",
     "git.ignoreLimitWarning": true,
     "python.linting.pylintEnabled": true
 }

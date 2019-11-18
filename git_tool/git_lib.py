@@ -7,6 +7,8 @@ from common import logs
 from multiprocessing import Process
 from urllib.parse import urljoin
 
+HTTPS = 'https'
+GIT = 'git'
 
 def git_clone_repo_from(url, to_path):
     logs.log_repo_start_to_clone(url, to_path)
@@ -27,7 +29,13 @@ def git_clone_repos_from(repo_args):
 
 
 def get_repo_url(repo_base, name):
-    repo_url = urljoin(repo_base, name)
+    if not repo_base.endswith('/'):
+        repo_base = repo_base + '/'
+    if repo_base.startswith(HTTPS):
+        name = name + '.git'
+        repo_url = urljoin(repo_base, name)
+    else:
+        repo_url = urljoin(repo_base, name)
     return repo_url
 
 

@@ -1,0 +1,18 @@
+repo_base:
+  location: https://github.com/openstack/
+  repo_names:
+    - horizon
+    - nova
+    - neutron
+    - cinder
+    - glance
+    - keystone
+    - ceilometer
+    - neutron-lib
+    - cloudkitty
+    - panko
+    - kolla
+    - kolla-ansible
+    - oslo.reports
+
+dest_dir: "/Users/xiaojueguan/code/Openstack/"
